@@ -1,0 +1,109 @@
+# =========================
+# Root .gitignore for Full Stack (React + Node.js)
+# =========================
+
+# -------------------------
+# Node / Backend
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json # (optional – remove this line if you want to commit lockfile)
+.env
+.env.local
+.env.*.local
+.DS_Store
+dist/
+build/
+tmp/
+temp/
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Nodemon / PM2 / Debug
+.pids/
+.nodemonignore
+.pm2/
+
+# Coverage / Tests
+coverage/
+.nyc_output/
+jest-cache/
+jest.config.*.cache
+lcov-report/
+
+# Database files
+*.sqlite
+*.db
+*.db3
+data/
+
+# Uploaded or static files (if not needed in repo)
+uploads/
+public/uploads/
+storage/
+media/
+
+# -------------------------
+# React / Frontend (client/)
+# -------------------------
+client/node_modules/
+client/.pnp/
+client/.pnp.js
+client/build/
+client/dist/
+client/.next/
+client/out/
+client/.cache/
+client/.vite/
+client/.parcel-cache/
+client/.storybook/build/
+client/.env
+client/.env.local
+client/.env.*.local
+
+# -------------------------
+# Editors / OS files
+# -------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -------------------------
+# TypeScript / Misc
+# -------------------------
+*.tsbuildinfo
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# -------------------------
+# Docker / Deployment
+# -------------------------
+docker-compose.override.yml
+**/Dockerfile
+.dockerignore
+
+# -------------------------
+# Cache folders (general)
+# -------------------------
+.cache/
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.husky/_/
+.prettier_cache/

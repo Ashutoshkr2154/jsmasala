@@ -1,0 +1,39 @@
+/* src/styles/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply bg-brand-background text-brand-text font-body antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-primary ring-offset-2;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-brand-primary text-white hover:bg-opacity-90 focus:ring-brand-primary;
+  }
+  .btn-accent {
+    @apply bg-brand-accent text-white hover:bg-opacity-90 focus:ring-brand-accent;
+  }
+  .btn-secondary {
+    @apply bg-white text-brand-neutral border-gray-300 hover:bg-gray-50 focus:ring-brand-primary;
+  }
+}

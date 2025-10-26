@@ -1,0 +1,100 @@
+# Node / dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+dist/
+build/
+out/               # Next.js export
+.next/              # Next.js build
+.astro/             # Astro
+.public/            # some setups
+coverage/           # test coverage
+
+# Vite / Rollup / Parcel caches
+.vite/
+.cache/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (do NOT commit secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Local config
+*.local
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs / editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Temporary / OS files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+jest-cache/
+jest.config.*.cache
+
+# Coverage reports
+coverage/
+lcov-report/
+
+# Storybook
+.storybook/build/
+
+# Misc caches
+.cache-loader/
+cache/
+hooks/.cache
+
+# Parcel, electron, and other tool caches
+.cache/
+dist-ssr/
+
+# Uploaded assets or large files you don't want in repo
+uploads/
+*.zip
+*.tar.gz
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile
+
+# Secrets (if you use a file to store secrets locally)
+secrets.*
+secret-*.json
+
+# Optional: lock files are normally committed! Uncomment only if you intentionally want to ignore them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

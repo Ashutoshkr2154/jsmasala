@@ -1,0 +1,8 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow: /admin
+Disallow: /profile
+Disallow: /cart
+Disallow: /checkout
+
+Sitemap: https://www.your-jsm-masala-domain.com/sitemap.xml
