@@ -24,7 +24,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["vite/client"]
   },
   "include": ["src", "tests", "vite.config.ts", "jest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

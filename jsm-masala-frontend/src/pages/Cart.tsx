@@ -1,5 +1,4 @@
 // src/pages/Cart.tsx
-import { Link } from 'react-router-dom';
 import { Loader2, XCircle } from 'lucide-react'; // Import icons
 
 // Hooks for data, state, and actions
