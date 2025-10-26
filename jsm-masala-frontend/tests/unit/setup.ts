@@ -24,7 +24,8 @@ jest.mock('react-helmet-async', () => ({
 
 // Mock 'zustand' stores
 jest.mock('@/store/useCartStore', () => {
-  const { create } } = jest.requireActual('zustand');
+  // --- FIX: Removed extra '}' ---
+  const { create } = jest.requireActual('zustand');
   const store = create(() => ({
     items: [],
     isOpen: false,
@@ -35,17 +36,32 @@ jest.mock('@/store/useCartStore', () => {
     openCart: jest.fn(),
     closeCart: jest.fn(),
     toggleCart: jest.fn(),
+    setItems: jest.fn(), // <-- Added missing action
   }));
   return { useCartStore: store };
 });
 
 jest.mock('@/store/useAuthStore', () => {
-  const { create } } = jest.requireActual('zustand');
+  // --- FIX: Removed extra '}' ---
+  const { create } = jest.requireActual('zustand');
   const store = create(() => ({
     user: null,
     token: null,
     login: jest.fn(),
     logout: jest.fn(),
+    setAccessToken: jest.fn(), // <-- Added missing action
   }));
   return { useAuthStore: store };
+});
+
+// --- ADDED: Mock for useWishlistStore ---
+// This is needed for components that use the wishlist
+jest.mock('@/store/useWishlistStore', () => {
+  const { create } = jest.requireActual('zustand');
+  const store = create(() => ({
+    items: [],
+    setItems: jest.fn(),
+    isInWishlist: jest.fn(() => false), // Mock implementation
+  }));
+  return { useWishlistStore: store };
 });
