@@ -50,4 +50,4 @@ This is a production-ready, responsive React + TypeScript frontend for JSM Masal
 This command bundles the app for production, optimized and minified. It also generates the PWA service worker.
 
 ```bash
-npm run build
+npm run build"# jsmasala" 
